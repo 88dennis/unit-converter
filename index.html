@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Unit Converters</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Special+Elite&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <a href="index.html"><button class="backbtn">Home Page</button></a>
+    <div class="container">
+        <h2 style="text-align: center; margin-top: 50px">Unit Converter</h2>
+        <div class="btnContainer">
+            <button class="convertBtnClass" id="tempConvId">deg F to deg C</button>
+            <button class="convertBtnClass" id="lengthConvId">Ft to Meters</button>
+            <button class="convertBtnClass" id="distanceConvId">Miles to Km</button>
+            <button class="convertBtnClass" id="weightConvId">lbs to Kg</button>
+        </div>
+        <br>
+
+        <div class="inputContainer">
+            <input id="toConvertId" type="number;" style="display: none">
+            <span class="equalSign spanClass" style="display: none;"> = </span>
+            <span id="resultId" class="resultClass spanClass" style="display: none;" type="number;" placeholder="Result"></span>
+        </div>
+        <div class="convertBtnContainer">
+            <button id="submitBtnId" type="submit" style="display: none">Convert</button>
+        </div>
+
+        <div class="tempInfoContainerClass" style="display: none;">
+            <div class="formula-container">
+                <h2 id="tempConvFtoC">Fahrenheit to Celsius</h2>
+                <h3>(°F − 32) x 5/9 = °C </h3>
+                <article>
+                    <p> There are two main temperature scales: °F, the Fahrenheit Scale (used in the US), and °C, the Celsius Scale (part of the Metric System, used in most other countries)</p>
+
+                    <p>They both measure the same thing (temperature!), but use different numbers: </p>
+                    <ul>
+                        <li>Boiling water (at normal pressure) measures 100° in Celsius, but 212° in Fahrenheit</li>
+                        <li>And as water freezes it measures 0° in Celsius, but 32° in Fahrenheit</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+
+        <div class="tempInfoContainerClass" style="display: none;">
+            <div class="formula-container">
+                <h2 id="lengthConvFtoM">Feet to Meters: meter value = ( ___ ft. ) x 1 meter / 3.281 ft. </h2>
+                <br>
+                <article>
+                    <p>The metre or meter (American spelling) is the base unit of length in the International System of Units (SI). The SI unit symbol is m. The metre is defined as the length of the path travelled by light in a vacuum ..... 1 metre is nearly
+                        equivalent to 3 feet ​3 3⁄8 inches. This gives an overestimate of 0.125 mm;</p>
+                    <br>
+                </article>
+            </div>
+        </div>
+
+        <div class="tempInfoContainerClass" style="display: none;">
+            <div class="formula-container">
+                <h2>Miles to Kilometers: kilometer value = ( ___ mile) x 1.609344 kilometers / 1 miles</h2>
+                <br>
+                <article>
+                    <p> How to convert miles to kilometers</p>
+                    <p>1 mile is equal to 1.609344 kilometers: 1 mi = 1.609344 km </p>
+                    <p>The distance d in kilometers (km) is equal to the distance d in miles (mi) times 1.609344:</p>
+                    <p> d(km) = d(mi) × 1.609344 </p>
+                    <p>Example Convert 20 miles to kilometers: </p>
+                    <p>d(km) = 20mi × 1.609344 = 32.18688km</p>
+                    <br>
+                </article>
+            </div>
+        </div>
+
+        <div class="tempInfoContainerClass" style="display: none;">
+            <div class="formula-container">
+                <h2>Pounds to Kilograms: Kilogram value = ( ___ lbs) x 1 kilogram / 2.205 lbs</h2>
+                <br>
+                <article>
+                    <p> How to convert Pounds to Kilograms</p>
+                    <p> 1 pound (lb) is equal to 0.45359237 kilograms (kg). </p>
+                    <p>1 lb = 0.45359237 kg</p>
+                    <p>The mass m in kilograms (kg) is equal to the mass m in pounds (lb) times 0.45359237:</p>
+                    <p>m(kg) = m(lb) × 0.45359237: </p>
+                    <p>Example: Convert 5 lb to kilograms:</p>
+                    <p> m(kg) = 5 lb × 0.45359237 = 2.268 kg:</p>
+                    <br>
+                </article>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="script.js "></script>
+
+</html>

@@ -1,0 +1,175 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.redClass {
+    color: rgb(176, 102, 179);
+}
+
+.blackClass {
+    color: black;
+}
+
+.btnContainer {
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.convertBtnClass {
+    margin: 10px;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#submitBtnId {
+    margin: 10px;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+.backbtn {
+    margin: 10px;
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: lightgray;
+    border-style: none;
+    border-width: 1px;
+    border-color: black;
+}
+
+
+/* #submitBtnId:focus {
+    box-shadow: 0 0 0 2pt rgb(128, 123, 123);
+} */
+
+button:focus {
+    outline-style: dotted;
+    outline-offset: 2px;
+    outline-width: 2px;
+    outline-color: steelblue;
+}
+
+
+/* button:focus {
+    outline: none;
+} */
+
+input:focus {
+    outline: none;
+}
+
+
+/* .convertBtnClass,
+input:active {
+    outline: none;
+} */
+
+button:hover {
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.inputContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+#toConvertId {
+    width: 220px;
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#toConvertId::placeholder {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+.resultClass {
+    width: 220px;
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    border-style: solid;
+    border-width: 1px;
+    padding-top: 8px;
+}
+
+.resultClass::placeholder {
+    text-align: center;
+}
+
+.convertBtnContainer {
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+.tempInfoContainerClass {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    margin: 0;
+    font-size: 15px;
+}
+
+h2,
+h3 {
+    margin: 0;
+}
+
+.formula-container {
+    max-width: 70%;
+    min-width: 300px;
+}
+
+.equalSign {
+    font-size: 20px;
+    padding-top: 8px;
+}
