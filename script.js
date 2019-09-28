@@ -21,7 +21,7 @@ console.log(resultSpan)
                 tempInfoContainer[j].style.display = "none"
             }
 
-            this.style.outlineStyle = "none"
+            // this.style.outlineStyle = "none"
             resultSpan.style.backgroundColor = "transparent";
             resultSpan.style.borderStyle = "solid";
             resultSpan.style.color = "black";
@@ -75,24 +75,24 @@ console.log(resultSpan)
             toConvertInputVal = Number(toConvertInput.value);
             convertThis(toConvertInputVal, toConvertInput.placeholder);
             console.log(toConvertInputVal);
-            submitBtn.style.outlineStyle = "none"
+            // submitBtn.style.outlineStyle = "none"
             toConvertInput.value = ""
         } else if(toConvertInput.placeholder === "Feet Value"){
             toConvertInputVal = Number(toConvertInput.value);
             convertThis(toConvertInputVal, toConvertInput.placeholder);
             console.log(toConvertInputVal);
-            submitBtn.style.outlineStyle = "none"
+            // submitBtn.style.outlineStyle = "none"
             toConvertInput.value = ""
         }else if(toConvertInput.placeholder === "Miles Value"){
             toConvertInputVal = Number(toConvertInput.value);
             convertThis(toConvertInputVal, toConvertInput.placeholder);
             console.log(toConvertInputVal);
-            submitBtn.style.outlineStyle = "none"
+            // submitBtn.style.outlineStyle = "none"
             toConvertInput.value = ""
         } else  if(toConvertInput.placeholder === "Pounds Value"){
             toConvertInputVal = Number(toConvertInput.value);
             convertThis(toConvertInputVal, toConvertInput.placeholder);
-            submitBtn.style.outlineStyle = "none"
+            // submitBtn.style.outlineStyle = "none"
             console.log(toConvertInputVal);
             toConvertInput.value = ""
         }

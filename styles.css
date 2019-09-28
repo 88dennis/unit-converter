@@ -85,7 +85,10 @@ button:focus {
 } */
 
 input:focus {
-    outline: none;
+    outline-style: dotted;
+    outline-offset: 2px;
+    outline-width: 2px;
+    outline-color: steelblue;
 }
 
 
