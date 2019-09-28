@@ -67,8 +67,8 @@ console.log(resultSpan)
         })
     }
     
-    submitBtn.addEventListener("click", convertFunction)
-    toConvertInput.addEventListener("keyup", enterFunction)
+    submitBtn.addEventListener("click", convertFunction);
+    toConvertInput.addEventListener("keyup", enterFunction);
 
     function convertFunction(){
         if(toConvertInput.placeholder === "Fahrenheit Value"){
@@ -100,8 +100,6 @@ console.log(resultSpan)
     
     function enterFunction(event){
         if(event.which === 13) {
-
-            
             submitBtn.click();
         }
     }
