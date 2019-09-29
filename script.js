@@ -81,6 +81,7 @@ console.log(resultSpan)
     toConvertInput.addEventListener("keyup", enterFunction);
 
     function convertFunction(){
+
         if(toConvertInput.placeholder === "Fahrenheit Value"){
             toConvertInputVal = Number(toConvertInput.value);
             convertThis(toConvertInputVal, toConvertInput.placeholder);
@@ -110,7 +111,11 @@ console.log(resultSpan)
             console.log(toConvertInputVal);
             toConvertInput.value = ""
         }
+
+    
     }
+
+
     
     function enterFunction(event){
         if(event.which === 13) {
@@ -119,13 +124,22 @@ console.log(resultSpan)
     }
 
 function convertThis(inputVal, id){
+    if(isNaN(inputVal)) {
+       let message = "Enter a Number"
+        resultSpan.textContent = message;
+        console.log("Not a number")
+    } else {
     if(id === "Fahrenheit Value"){
         resultVal = (inputVal - 32) * 5 / 9;
-        resultSpan.textContent = resultVal + " deg C";
-        resultSpan.style.backgroundColor = "steelblue";
-        resultSpan.style.borderStyle = "none";
-        resultSpan.style.color = "white";
-        console.log(resultVal, "Temp Result")
+            resultSpan.textContent = resultVal
+            console.log("Not a number")
+            console.log(isNaN(resultVal), "RESULT SDASDASDASD")
+            resultSpan.textContent = resultVal + " deg C";
+            resultSpan.style.backgroundColor = "steelblue";
+            resultSpan.style.borderStyle = "none";
+            resultSpan.style.color = "white";
+            console.log(resultVal, "Temp Result")
+    
        } else if(id === "Feet Value"){
         resultVal = ((inputVal) * 1 / 3.281);
         resultSpan.textContent = resultVal + " mtr";
@@ -148,4 +162,22 @@ function convertThis(inputVal, id){
         resultSpan.style.color = "white";
         console.log(resultVal, "weight Result")
        }
-}
+    }
+    } 
+
+
+
+
+
+    // if(isNaN(resultVal)) {
+    //     resultVal = "Enter a Number"
+    //     resultSpan.textContent = resultVal
+    //     console.log("Not a number")
+    // } else {
+    //     console.log(isNaN(resultVal), "RESULT SDASDASDASD")
+    //     resultSpan.textContent = resultVal + " deg C";
+    //     resultSpan.style.backgroundColor = "steelblue";
+    //     resultSpan.style.borderStyle = "none";
+    //     resultSpan.style.color = "white";
+    //     console.log(resultVal, "Temp Result")
+    // }
