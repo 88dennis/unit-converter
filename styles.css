@@ -33,6 +33,7 @@ body {
     border-style: solid;
     border-width: 1px;
     border-color: black;
+    color: black
 }
 
 #submitBtnId {
@@ -45,6 +46,7 @@ body {
     border-style: solid;
     border-width: 1px;
     border-color: black;
+    color: black;
 }
 
 a {
@@ -73,10 +75,19 @@ a:focus {
 } */
 
 button:focus {
-    outline-style: dotted;
-    outline-offset: 2px;
-    outline-width: 2px;
-    outline-color: steelblue;
+    outline: none;
+    background-color: steelblue;
+    color: white;
+    border-style: none;
+    /* text-decoration: underline; */
+}
+
+#submitBtnId:focus {
+    outline: none;
+    background-color: steelblue;
+    color: white;
+    border-style: none;
+    text-decoration: underline;
 }
 
 
@@ -85,10 +96,9 @@ button:focus {
 } */
 
 input:focus {
-    outline-style: dotted;
-    outline-offset: 2px;
-    outline-width: 2px;
-    outline-color: steelblue;
+    outline: none;
+    box-shadow: 0 0 0 1pt gray;
+    border-style: none;
 }
 
 

@@ -15,9 +15,10 @@ console.log(resultSpan)
         convertBtns[i].addEventListener("click", function(){
 
             for(let j = 0; j < convertBtns.length; j++){
-                convertBtns[j].style.color = "black"
-                convertBtns[j].style.backgroundColor = "transparent"
-                convertBtns[j].style.borderStyle = "solid"
+                // convertBtns[j].style.color = "black"
+                // convertBtns[j].style.backgroundColor = "transparent"
+                convertBtns[j].style.textDecoration = "none"
+                // convertBtns[j].style.borderStyle = "solid"
                 tempInfoContainer[j].style.display = "none"
             }
 
@@ -26,8 +27,8 @@ console.log(resultSpan)
             resultSpan.style.borderStyle = "solid";
             resultSpan.style.color = "black";
 
-            allSpan[0].textContent = "";
-            allSpan[1].textContent = "";
+            allSpan[0].textContent = "=";
+            allSpan[1].textContent = "Result";
 
             // for(let k= 0; k < allSpan.length; k++){
             //      allSpan[k].style.display = "none"
@@ -38,31 +39,40 @@ console.log(resultSpan)
 
             toConvertInput.value = ""
             tempInfoContainer[i].style.display = "flex"
-            this.style.backgroundColor = "steelblue"
-            this.style.borderStyle = "none"
-            this.style.color = "white"
+            // this.style.backgroundColor = "steelblue"
+            // this.style.borderStyle = "none"
+            // this.style.color = "white"
+           this.style.textDecoration = "underline"
 
             if(this.textContent === "deg F to deg C") {
             toConvertInput.setAttribute("placeholder", "Fahrenheit Value")
             toConvertInput.style.display = "block"
             submitBtn.style.display = "block"
+            // submitBtn.style.backgroundColor = "lightgrey"
+            // submitBtn.style.borderStyle = "none"
                   }
 
             if(this.textContent === "Ft to Meters") {
                 toConvertInput.setAttribute("placeholder", "Feet Value")
                 toConvertInput.style.display = "block"
                 submitBtn.style.display = "block"
+                // submitBtn.style.backgroundColor = "lightgrey"
+            // submitBtn.style.borderStyle = "none"
              }
              if(this.textContent === "Miles to Km") {
                 toConvertInput.setAttribute("placeholder", "Miles Value")
                 toConvertInput.style.display = "block"
                 submitBtn.style.display = "block"
+                // submitBtn.style.backgroundColor = "lightgrey"
+            // submitBtn.style.borderStyle = "none"
                 }
 
                 if(this.textContent === "lbs to Kg") {
                     toConvertInput.setAttribute("placeholder", "Pounds Value")
                     toConvertInput.style.display = "block"
                     submitBtn.style.display = "block"
+                    // submitBtn.style.backgroundColor = "lightgrey"
+            // submitBtn.style.borderStyle = "none"
                 }
         })
     }
@@ -76,23 +86,27 @@ console.log(resultSpan)
             convertThis(toConvertInputVal, toConvertInput.placeholder);
             console.log(toConvertInputVal);
             // submitBtn.style.outlineStyle = "none"
+            // submitBtn.style.color = "black"
             toConvertInput.value = ""
         } else if(toConvertInput.placeholder === "Feet Value"){
             toConvertInputVal = Number(toConvertInput.value);
             convertThis(toConvertInputVal, toConvertInput.placeholder);
             console.log(toConvertInputVal);
             // submitBtn.style.outlineStyle = "none"
+            // submitBtn.style.color = "black"
             toConvertInput.value = ""
         }else if(toConvertInput.placeholder === "Miles Value"){
             toConvertInputVal = Number(toConvertInput.value);
             convertThis(toConvertInputVal, toConvertInput.placeholder);
             console.log(toConvertInputVal);
             // submitBtn.style.outlineStyle = "none"
+            // submitBtn.style.color = "black"
             toConvertInput.value = ""
         } else  if(toConvertInput.placeholder === "Pounds Value"){
             toConvertInputVal = Number(toConvertInput.value);
             convertThis(toConvertInputVal, toConvertInput.placeholder);
             // submitBtn.style.outlineStyle = "none"
+            // submitBtn.style.color = "black"
             console.log(toConvertInputVal);
             toConvertInput.value = ""
         }
