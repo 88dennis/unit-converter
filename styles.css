@@ -125,7 +125,7 @@ button:hover {
 }
 
 #toConvertId {
-    width: 220px;
+    width: 260px;
     margin: 0 10px;
     text-align: center;
     border-radius: 5px;
@@ -141,7 +141,7 @@ button:hover {
 }
 
 .resultClass {
-    width: 220px;
+    width: 260px;
     margin: 0 10px;
     text-align: center;
     border-radius: 5px;

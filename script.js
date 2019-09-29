@@ -121,28 +121,28 @@ console.log(resultSpan)
 function convertThis(inputVal, id){
     if(id === "Fahrenheit Value"){
         resultVal = (inputVal - 32) * 5 / 9;
-        resultSpan.textContent = resultVal;
+        resultSpan.textContent = resultVal + " deg C";
         resultSpan.style.backgroundColor = "steelblue";
         resultSpan.style.borderStyle = "none";
         resultSpan.style.color = "white";
         console.log(resultVal, "Temp Result")
        } else if(id === "Feet Value"){
         resultVal = ((inputVal) * 1 / 3.281);
-        resultSpan.textContent = resultVal;
+        resultSpan.textContent = resultVal + " mtr";
         resultSpan.style.backgroundColor = "steelblue";
         resultSpan.style.borderStyle = "none";
         resultSpan.style.color = "white";
         console.log(resultVal, "length Result")
        } else if(id === "Miles Value"){
         resultVal = ((inputVal) * 1.609344);
-        resultSpan.textContent = resultVal;
+        resultSpan.textContent = resultVal + " Km";
         resultSpan.style.backgroundColor = "steelblue";
         resultSpan.style.borderStyle = "none";
         resultSpan.style.color = "white";
         console.log(resultVal, "distance Result")
        } else if(id === "Pounds Value"){
         resultVal = ((inputVal) * 1 / 2.205);
-        resultSpan.textContent = resultVal;
+        resultSpan.textContent = resultVal + " Kg";
         resultSpan.style.backgroundColor = "steelblue";
         resultSpan.style.borderStyle = "none";
         resultSpan.style.color = "white";
